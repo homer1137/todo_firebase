@@ -7,9 +7,9 @@ import ManageTodo from "./components/ManageTodo/ManageTodo";
 
 function App() {
   const [todo, setTodo] = useState([
-    { id: 1, text: "hello", done: false },
-    { id: 2, text: "hi again", done: false },
-    { id: 3, text: "to do task", done: false },
+    { id: 1, text: "Тестовое задание", done: false },
+    { id: 2, text: "Прекрасный код", done: true},
+    { id: 3, text: "Покрытие тестами", done: false },
   ]);
 
   const [active, setActive] = useState(false);
