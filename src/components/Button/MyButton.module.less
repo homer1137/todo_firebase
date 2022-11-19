@@ -1,0 +1,30 @@
+.myBtn {
+  padding: 5px 10px;
+  color: rgb(169,169,169);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0 10px;
+  transition-duration: 0.4s;
+  font-size: 1.3rem;
+  &:hover {
+    transform: scale(1.1);
+  }
+  &:active {
+      color: coral;
+  }
+  &:disabled{
+      color: rgb(77, 77, 77);
+      cursor: not-allowed;
+  }
+
+  
+  @media (max-width: 1024px) {
+    .myBtn {
+      margin: 0;
+    }
+  }
+  
+}
+
+

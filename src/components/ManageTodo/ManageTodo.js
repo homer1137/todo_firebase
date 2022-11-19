@@ -1,6 +1,6 @@
 import React from "react";
 import MyButton from "../Button/MyButton";
-import classes from "./ManageTodo.module.css";
+import classes from "./ManageTodo.module.less";
 
 export default function ManageTodo({
   setActive,

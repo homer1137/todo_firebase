@@ -35,7 +35,7 @@ function App() {
   const [active, setActive] = useState(false);
   const [completed, setCompleted] = useState(false);
   const [progress, setProgress] = useState(0);
-  const [edit, setEdit] = useState(false);
+
 
   const sortedPosts = () => {
     if (active) return [...todo].filter((item) => item.done === false);
@@ -64,13 +64,10 @@ function App() {
 
   let result = todo.filter((item) => item.done !== true).length;
 
-  //firebas functions:
 
-  const changeTodo = (e) => {
-    e.preventDefault();
-  };
 
   const deleteTodo =async(id)=>{
+    setTodo(todo.filter((td) => td.id !== id));
     await deleteDoc(doc(db, 'todos', id))
   }
 
