@@ -7,6 +7,8 @@
   margin: 0 10px;
   transition-duration: 0.4s;
   font-size: 1.3rem;
+  /* border: 2px solid coral; 
+  border-radius: 5px; */
 }
 
 .myBtn:hover {
